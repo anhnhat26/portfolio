@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Phạm Quốc Khang Portfolio",
+  "description": "Landing page portfolio cá nhân của Phạm Quốc Khang - Marketing \u0026 Communication Specialist",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

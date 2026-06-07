@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #E54522;
+  --color-bg-warm: #F4F4F2;
+  --color-brand-dark: #111111;
+  --color-card-border: #999999;
+  
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-spin-slow: spin 12s linear infinite;
+  --animate-spin-very-slow: spin 40s linear infinite;
+}
+
+/* Custom scrolling marquee setup */
+@keyframes marquee-spin {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-spin 25s linear infinite;
+}
+
+.bg-checkered {
+  background-image: radial-gradient(#E54522 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
